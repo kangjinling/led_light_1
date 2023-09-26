@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:led_light/pickers/hue_picker.dart';
-import 'package:led_light/pickers/utils.dart';
+import 'package:led_light/hue_picker.dart';
+
+import 'color_pickers/utils.dart';
 
 void main() => runApp(
     const MaterialApp(

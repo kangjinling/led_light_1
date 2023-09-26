@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart' show CupertinoTextField;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:led_light/pickers/palette.dart';
-import 'package:led_light/pickers/utils.dart';
 
-import 'colorpicker.dart';
+import 'color_pickers/colorpicker.dart';
+import 'color_pickers/palette.dart';
+
 
 // Just an example of how to use/interpret/format text input's result.
 void copyToClipboard(String input) {
@@ -70,7 +70,7 @@ class _ColorPickerExample extends State<ColorPickerExample> {
           colorHistory: widget.colorHistory,
           onHistoryChanged: widget.onHistoryChanged,
         ),
-        Text(textController.text),
+        Text(textController.text,style: const TextStyle(color: Colors.blue,fontSize: 16),),
       ],
     );
   }
